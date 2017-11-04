@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html lang="en-us">
+<head>
+	<title>Friend App</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	
+  <div class="container brown lighten-2 z-depth-3">
+
+  <div class="row">
+     <div class="col s1"></div>
+     <div class="col s10 brown lighten-2 ">
+        <h4 class="center">Hogwart's Online Sorting Hat</h4>
+        <div class="divider"></div>
+        <br>
+        <h5>Hogwarts is going digital</h5>
+        <h5>Answer some questions and we'll determine your house</h5>
+        <br>
+        
+        <a class="waves-effect waves-dark btn-large green" id="survey-button"> <i class="material-icons large left">assignment</i> Start Survey</a>
+        <br><br>
+     </div>
+     <div class="col s1"></div>
+  </div>
+  <br>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $("#survey-button").on("click", function() {
+      window.location.replace(  window.location.href +"survey");
+    });
+  </script>
+</body>
+</html>
