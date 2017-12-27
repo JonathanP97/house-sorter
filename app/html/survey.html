@@ -1,21 +1,18 @@
 <!DOCTYPE>
 <html lang="en-us">
 <head>
-	<title>Survey</title>
+	<title>Survey</title> 
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../css/survey.css">
 </head>
 <body>
 	
-  <div class="container brown lighten-4 z-depth-3">
-  <div class="row">
-     <div class="col s1"></div>
-     <div class="col s10 brown lighten-4">
+  <div class="container main z-depth-3">
+     <div class="">
 
         <h4>Answer Wisely!</h4>
-        <div class="divider"></div>
-        
 
         <div class="row">
            <form class="col s12 survey-form">
@@ -102,7 +99,6 @@
 
         <br><br>
      </div>
-     <div class="col s1"></div>
   </div>
 
   <div id="modal1" class="modal">
@@ -118,19 +114,19 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript">
-    function displayModal() {
-      console.log("added form");
-      $('#modal1').modal('open');
+    // function displayModal() {
+    //   console.log("added form");
+    //   $('#modal1').modal('open');
 
-      $.ajax("/api/friends", {
-        type: "GET",
-      }).then(
-        function(data) {
-          console.log(data);
-          $('#span-house').html(data.)
-        }
-      );
-    }
+    //   $.ajax("/api/friends", {
+    //     type: "GET",
+    //   }).then(
+    //     function(data) {
+    //       console.log(data);
+    //       $('#span-house').html(data.)
+    //     }
+    //   );
+    // }
 
     $(document).ready(function() {
       $('select').material_select();
