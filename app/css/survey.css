@@ -3,4 +3,19 @@ body{
 }
 
 .main {
-	background-color: #e5c07b;
+	background-color: #ff8282;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.col {
+	margin-top: 0px;
+	margin-bottom: 25px;
+
+}
+.s6 {
+	background-color: #ffeaec;
+	padding: 0;
+}

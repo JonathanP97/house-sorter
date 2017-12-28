@@ -11,52 +11,56 @@ var houses = [
       1,
       4,
       4,
-      3
+      3,
+      1
     ]
   },
   {
     name: "Slytherin",
     crest: "...",
     members: [
-      "Malfoy",
-      "Other guy"
+      "Draco",
+      "Tom"
     ],
     scores: [
       1,
       1,
       1,
       1,
-      1
+      1,
+      4
     ]
   },
   {
     name: "Ravenclaw",
     crest: "...",
     members: [
-      "person",
-      "Other guy"
+      "Luna",
+      "Lockhart"
     ],
     scores: [
       5,
       1,
       2,
       4,
-      4
+      4,
+      2
     ]
   },
   {
     name: "Hufflepuff",
     crest: "...",
     members: [
-      "Some people",
-      "random"
+      "Cedric",
+      "Nymphadora"
     ],
     scores: [
       3,
       3,
       3,
       4,
-      2
+      2,
+      3
     ]
   }
 ]
