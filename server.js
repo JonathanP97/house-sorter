@@ -9,6 +9,7 @@ var port = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use(express.static('app'));
 
 app.listen(port, function() {
 	console.log("Currently listening on port " + port);
