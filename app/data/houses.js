@@ -1,7 +1,6 @@
 var houses = [
   {
     name: "Gryffindor",
-    crest: "...",
     members: [
       "Harry",
       "Ron" 
@@ -17,7 +16,6 @@ var houses = [
   },
   {
     name: "Slytherin",
-    crest: "...",
     members: [
       "Draco",
       "Tom"
@@ -33,7 +31,6 @@ var houses = [
   },
   {
     name: "Ravenclaw",
-    crest: "...",
     members: [
       "Luna",
       "Lockhart"
@@ -49,7 +46,6 @@ var houses = [
   },
   {
     name: "Hufflepuff",
-    crest: "...",
     members: [
       "Cedric",
       "Nymphadora"

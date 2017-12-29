@@ -13,7 +13,6 @@ app.use(express.static('app'));
 
 app.listen(port, function() {
 	console.log("Currently listening on port " + port);
-	console.log(houses);
 });
 
 // Serves HTML ///////////////////////////////////////////////////////////
@@ -26,11 +25,11 @@ app.get("/survey", function(req, res) {
 });
 
 // JSON ///////////////////////////////////////////////////////////////// 
-app.get("/api/friends", function(req, res) {
+app.get("/api/houses", function(req, res) {
 	res.json(houses);
 });
 
-app.post("/api/friends/", function(req, res) {
+app.post("/api/friends", function(req, res) {
 	var user = req.body;
 
 	console.log(user);
