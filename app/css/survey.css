@@ -19,3 +19,8 @@ body{
 	background-color: #ffeaec;
 	padding: 0;
 }
+
+img {
+	width: 40%;
+	height: 40%;
+}

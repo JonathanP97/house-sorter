@@ -4,7 +4,7 @@ var houses = [
     crest: "...",
     members: [
       "Harry",
-      "Ron"
+      "Ron" 
     ],
     scores: [
       5,
