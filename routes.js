@@ -12,8 +12,8 @@ module.exports = (app, path) => {
 	});
 
 	// JSON 
-	app.get("/houses", function(req, res) {
-		res.json(houses);
+	app.get("/houses/:id", function(req, res) {
+		res.json(houses[req.params.id]);
 	});
 
 	app.post("/houses", function(req, res) {
@@ -41,6 +41,6 @@ module.exports = (app, path) => {
 		console.log(user);
 		houses[user.house].members.push(user.name);
 		console.log(houses[user.house]);
-		res.json(user);
+		res.json(houses[user.house]);
 	});
 }

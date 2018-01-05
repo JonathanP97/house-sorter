@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="../css/survey.css">
 </head>
 <body>
-	
+	 
   <div class="container">
-     <div class="main">
+     <div class="main z-depth-3 brown lighten-3">
 
         <h4>Answer Wisely!</h4>
 
@@ -136,35 +136,23 @@
       var houseNum = data.house;
       var house = null;
 
-      //Switch to determine users house
-      switch(houseNum) {
-        case 0:
-          house = "Gryffindor";
-          break;
-        case 1:
-          house = "Slytherin";
-          break;
-        case 2:
-          house = "Ravenclaw";
-          break;
-        case 3:
-          house = "Hufflepuff";
-          break;
-        default: 
-          house = null;
-          break;
-      }
-
       $(".main").empty();
-      $(".main").append("<h4>Congrats " + data.name + " you are in the " + 
-                        house +" house");
+      $(".main").append("<h4>Congrats " + data.members[(data.members.length-1)] + " you are in the " + data.name +" house");
 
-      var imgSource = "../data/images/" + house.toLowerCase() +".png";
+      var imgSource = "../data/images/" + data.name.toLowerCase() +".png";
       console.log(imgSource);
 
       var img = $("<img>");
       img.attr("src", imgSource);
       $(".main").append(img);
+
+      var list = $("<ul>");
+      for(var i =0; i<data.members.length; i++) {
+        var li = $("<li>" +data.members[i] + "</li>");
+        list.append(li);
+      }
+      $(".main").append("<p>Other Members in house:</p>");
+      $(".main").append(list);
 
     }
   </script>
