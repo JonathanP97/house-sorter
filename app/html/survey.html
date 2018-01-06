@@ -147,11 +147,12 @@
       $(".main").append(img);
 
       var list = $("<ul>");
+      var first = $("<li>Other members in house: </li>");
+      list.append(first);
       for(var i =0; i<data.members.length; i++) {
         var li = $("<li>" +data.members[i] + "</li>");
         list.append(li);
       }
-      $(".main").append("<p>Other Members in house:</p>");
       $(".main").append(list);
 
     }
