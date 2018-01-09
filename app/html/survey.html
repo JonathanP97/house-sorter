@@ -9,11 +9,15 @@
 </head>
 <body>
 	 
+  <nav>
+    <a class="brand-logo">Digital Sorting Hat</a>
+  </nav>
+  <br><br>
   <div class="container">
-     <div class="main z-depth-3 brown lighten-3">
+     <div class="main ">
 
-        <h4>Answer Wisely!</h4>
-
+        <h4 class="h4-answer">Answer Wisely!</h4>
+        <div class="divider"></div>
         <div class="row">
            <form class="col s12 survey-form">
 
@@ -23,7 +27,7 @@
                     <input name="name" type="text" class="validate">
                  </div>
               </div>
-
+              <div class="divider center-div"></div>
                <div class="input-field col s6">
                 <h5>Are you a courageous?</h5>
                 <select name="q-1">
@@ -46,7 +50,7 @@
                   <option value="5">Strongly Agree</option>
                 </select>
                </div>
-
+              <div class="divider center-div"></div>
                <div class="input-field col s6">
                 <h5>Would an adventure sound fun?</h5>
                 <select name="q-3">
@@ -69,7 +73,7 @@
                   <option value="5">Strongly Agree</option>
                 </select>
                </div>
-
+               <div class="divider center-div"></div>
                <div class="input-field col s6">
                 <h5>Did you like school?</h5>
                 <select name="q-5">
@@ -93,12 +97,12 @@
                 </select>
                </div>
 
-              <a type="submit" class="waves-effect waves-dark btn green" > Submit Survey</a>
+              <a type="submit" class="waves-effect waves-dark btn-large" > Submit Survey</a>
            </form>
         </div> 
 
-        <br><br>
      </div>
+     <br><br>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -108,6 +112,10 @@
       $('select').material_select();
 
       $('.btn').on('click', function(event) {
+        window.location.replace("/");
+      });
+
+      $('.btn-large').on('click', function(event) {
         event.preventDefault();
 
         var form = {
@@ -153,8 +161,10 @@
         var li = $("<li>" +data.members[i] + "</li>");
         list.append(li);
       }
-      $(".main").append(list);
 
+      // var redoButton = $("<a class='waves-effect waves-dark btn' >Retake Survey</a>");
+      $(".main").append(list);
+      // $(".main").append(redoButton);
     }
   </script>
 </body>
