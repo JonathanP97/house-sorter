@@ -38,9 +38,9 @@ module.exports = (app, path) => {
 			console.log("lowest num: " + lowestDif);
 		}
 		console.log("\n");
-		console.log(user);
+		// console.log(user);
 		houses[user.house].members.push(user.name);
-		console.log(houses[user.house]);
+		// console.log(houses[user.house]);
 		res.json(houses[user.house]);
 	});
 }
