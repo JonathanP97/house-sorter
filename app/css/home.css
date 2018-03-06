@@ -6,21 +6,21 @@ body {
 
 nav {
 	background-color: #273087;
-	opacity: 0.8;
 }
 
 .main {
 	padding: 10px;
-	opacity: 0.9;
+	opacity: 0.945;
 	background-color: #273087;
 	color: white;
+	text-align: center;
 }
  
 .divider {
-	width: 80%;
+	width: 190px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1.7px;
+	padding: 1.8px;
 	background-color: #ee6e73;
 
 }

@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('select').material_select();
 
   redoSurvey = function() {
-    window.location.replace("/");
+    window.location.replace("/survey");
   }
 
   $('.btn-large').on('click', function(event) {

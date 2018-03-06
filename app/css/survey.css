@@ -1,22 +1,17 @@
 body{
-	background-color: #00296b;
+	background-image: url("../data/images/hall.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
 }
 
 .main {
-	background-color: #273087;
-	color: white;
+	background-color: transparent;
+	/*color: white;*/
 }
 
 .row {
 	margin-bottom: 10px;
-}
-
-.divider {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1.7px;
-	background-color: #ee6e73;
 }
 
 .h4-answer {
@@ -28,6 +23,7 @@ body{
 	margin-top: 0px;
 	margin-bottom: 25px;
 }
+
 .s6 {
 	background-color: #273087;
 	padding: 0;
@@ -40,18 +36,17 @@ img {
 }
 
 .btn-large {
-	background-color: #ee6e73;
-	margin-left: 20px;
+	background-color: #273087;
 }
 
 .input-field {
-	background-color: #273087;
-	color: white;
+	/*color: white;*/
+	background-color: transparent;
 }
 
 .center-div {
 	width: 100%;
 	padding: 20px;
-	color: white;
-	background-color: #00296b;
+	/*color: white;*/
+	background-color: transparent;
 }
