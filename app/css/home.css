@@ -1,6 +1,7 @@
 body {
-	/*background-color: #00296b;*/
 	background-image: url("../data/images/hogwarts-castle.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 nav {
