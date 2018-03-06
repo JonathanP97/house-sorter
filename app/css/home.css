@@ -1,14 +1,18 @@
 body {
-	background-color: #00296b;
+	/*background-color: #00296b;*/
+	background-image: url("../data/images/hogwarts-castle.jpg");
 }
 
 nav {
-	background-color: #/*00ffc8*/;
+	background-color: #273087;
+	opacity: 0.8;
 }
 
 .main {
 	padding: 10px;
-	background-color: #74edd3;
+	opacity: 0.9;
+	background-color: #273087;
+	color: white;
 }
  
 .divider {
@@ -17,6 +21,7 @@ nav {
 	margin-right: auto;
 	padding: 1.7px;
 	background-color: #ee6e73;
+
 }
 
 .btn-large {

@@ -3,7 +3,8 @@ body{
 }
 
 .main {
-	background-color: #74edd3;
+	background-color: #273087;
+	color: white;
 }
 
 .row {
@@ -28,7 +29,7 @@ body{
 	margin-bottom: 25px;
 }
 .s6 {
-	background-color: #ffeaec;
+	background-color: #273087;
 	padding: 0;
 }
 
@@ -44,11 +45,13 @@ img {
 }
 
 .input-field {
-	background-color: #74edd3;
+	background-color: #273087;
+	color: white;
 }
 
 .center-div {
 	width: 100%;
 	padding: 20px;
+	color: white;
 	background-color: #00296b;
 }
